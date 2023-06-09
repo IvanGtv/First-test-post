@@ -1,0 +1,83 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body{
+    font-family: 'Jost', sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header{
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+flex-wrap: wrap;
+height: 700px;
+padding: 0 70px;
+margin: 0 20px;
+background-image:url("/Users/ivanshomefolder/Downloads/class10-materials/layout-photos/fruits.jpg");
+background-color: teal;
+}
+.logo{
+    height: 100px;
+    cursor: pointer;
+}
+.navlist{
+    display: flex;
+    list-style: none;
+ justify-content: space-between;
+
+}
+.navlist li{
+    display: inline-block;
+    padding: 0 20px;
+    height: 50px;
+    
+}
+
+.cart{
+    height: 100px;
+    width: 100px;  
+}
+.first{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    flex-direction: column;
+}
+#magnify{
+    height: 50px;
+    width: 50px;
+}
+h1{
+    font-size: 36px;
+
+   
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
